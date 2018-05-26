@@ -8,6 +8,7 @@ A list of `regions` along with arrays of their children `resorts` are setup in `
 Using this data, please:
 1. render `ResortListApp` on the page using [React on Rails](https://github.com/shakacode/react_on_rails)
 2. Render a dropdown using the three given `regions` as options. The dropdown has the default value of `'Colorado'`
+  - bonus points: convert the region dropdown into an autocomplete field where the user can search for a region or a resort
 3. Render the selected region's resorts as a list. Display their `name`, `review_score_avg` and `review_count` values.
 4. Render a map using the Google Map Javascript API available on the page, you can either:
     1. use a React library such as `https://github.com/tomchentw/react-google-maps` for bonus points, or
@@ -16,6 +17,9 @@ Using this data, please:
 6. On initial map load, and when the user selects a different region on the dropdown, pan and zoom the map so that it exactly fits all of that region's resort markers inside it
 7. After clicking on a Marker, render a tooltip containing the resort's information
 8. Cluster markers together if they overlap
+
+Bonus points:
+- setup redux on the page and use redux to populate the data on the page
 
 You have discretion to design the page however you want. For the purposes of the demonstration, you only have to cater for Iphone 7 and Pixel 2 mobile devices, the page does not have to work properly on desktop. Bootstrap is made available on the page if you wish to use any of their utility classes to assist with layout. You can add and use any 3rd party package you like in this project, just include them into `package.json` and run `yarn`.
 
