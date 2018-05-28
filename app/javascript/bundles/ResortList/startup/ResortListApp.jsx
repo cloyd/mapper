@@ -12,7 +12,7 @@ ResortListApp.defaultProps = {
 }
 
 ResortListApp.propTypes = {
-  regions: Proptypes.array
+  regions: PropTypes.array
 }
 
 export default ResortListApp

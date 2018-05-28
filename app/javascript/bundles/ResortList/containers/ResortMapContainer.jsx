@@ -16,12 +16,12 @@ const ResortMapContainer = props => {
   )
 }
 
-ResortListApp.defaultProps = {
+ResortMapContainer.defaultProps = {
   regions: []
 }
 
-ResortListApp.propTypes = {
-  regions: Proptypes.array
+ResortMapContainer.propTypes = {
+  regions: PropTypes.array
 }
 
 export default ResortMapContainer

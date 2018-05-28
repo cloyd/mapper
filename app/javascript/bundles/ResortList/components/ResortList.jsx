@@ -67,7 +67,7 @@ ResortList.defaultProps = {
 }
 
 ResortList.propTypes = {
-  data: Proptypes.array
+  data: PropTypes.array
 }
 
 export default ResortList
