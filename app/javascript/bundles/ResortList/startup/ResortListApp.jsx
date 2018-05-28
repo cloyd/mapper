@@ -1,9 +1,18 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import ResortListContainer from '../containers/ResortListContainer';
+import ResortMapContainer from '../containers/ResortMapContainer'
 
 const ResortListApp = ({ regions }) => (
-  <ResortListContainer regions={ regions }/>
-);
+  <ResortMapContainer regions={ regions }/>
+)
 
-export default ResortListApp;
+ResortListApp.defaultProps = {
+  regions: []
+}
+
+ResortListApp.propTypes = {
+  regions: Proptypes.array
+}
+
+export default ResortListApp
