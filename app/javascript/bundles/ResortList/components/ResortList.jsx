@@ -36,6 +36,12 @@ const List = styled.div`
   }
 `
 
+/**
+ * stateless component that render list-data properties
+ * 
+ * @param {any} { data } 
+ * @returns 
+ */
 const ResortList = ({ data }) => {
   return (
     <ListWrapper>
