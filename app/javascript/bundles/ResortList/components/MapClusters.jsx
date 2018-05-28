@@ -48,6 +48,12 @@ class MapWithAMarkerClusterer extends Component {
     })
   }
 
+  /**
+   * fittobound method
+   * push selected region's resort to bound and pan to the new bounds
+   * 
+   * @memberof MapWithAMarkerClusterer
+   */
   fitToBounds = () => {
     const { LatLng, LatLngBounds }  = google.maps
     const bounds = new LatLngBounds()
@@ -61,9 +67,9 @@ class MapWithAMarkerClusterer extends Component {
     this.map.panToBounds(bounds, 200)
     let currentZoom = this.map.getZoom()
     if(currentZoom > 15){s
-        setTimeout(()=>{
-            this.setState({defaultZoom: 15})
-        }, 100)
+      setTimeout(()=>{
+          this.setState({defaultZoom: 15})
+      }, 100)
     }
   }
 
